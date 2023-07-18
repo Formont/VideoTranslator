@@ -1,2 +1,3 @@
 #VideoTranslator
-I came across one neural network translating videos, but it's paid, therefore I decided to create something similar. I am not a professional programmer, so the result is not very good. 
+For using you need to download libraries: gtts, moviepy, speech_recognition and googletrans. 
+
