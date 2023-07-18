@@ -5,7 +5,7 @@ import os
 
 t = googletrans.Translator()
 r = sr.Recognizer()
-
+filename = 'filename.mp4'
 resultName = "result"
 def split_video(video_path):
     video = VideoFileClip(video_path)
@@ -39,7 +39,7 @@ def save_result():
     video = video.set_audio(audio)
     video.write_videofile(f'{resultName}.mp4')
 
-split_video('filename.mp4')
+split_video(filename)
 text = translate_text(transcribe_speech("output_audio.wav"))
 tts(text)
 save_result()
